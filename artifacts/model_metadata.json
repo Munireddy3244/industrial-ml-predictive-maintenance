@@ -1,0 +1,63 @@
+{
+  "model_version": "demo-1.0.0",
+  "created_at_utc": "2026-10-23T10:47:06.822738+00:00",
+  "model_type": "RandomForestClassifier",
+  "features": [
+    "temperature_c",
+    "vibration_mm_s",
+    "speed_rpm",
+    "operating_hours"
+  ],
+  "target": "failure",
+  "threshold": 0.5,
+  "training_rows": 4000,
+  "test_rows": 1000,
+  "dataset": "industrial_sensor_data.csv",
+  "metrics": {
+    "accuracy": 0.941,
+    "precision": 0.1836734693877551,
+    "recall": 0.32142857142857145,
+    "f1": 0.23376623376623376,
+    "roc_auc": 0.7011500587889476,
+    "average_precision": 0.24462213160955654,
+    "threshold": 0.5,
+    "confusion_matrix_labels_0_1": [
+      [
+        932,
+        40
+      ],
+      [
+        19,
+        9
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9800210304942166,
+        "recall": 0.9588477366255144,
+        "f1-score": 0.96931877275091,
+        "support": 972.0
+      },
+      "1": {
+        "precision": 0.1836734693877551,
+        "recall": 0.32142857142857145,
+        "f1-score": 0.23376623376623376,
+        "support": 28.0
+      },
+      "accuracy": 0.941,
+      "macro avg": {
+        "precision": 0.5818472499409859,
+        "recall": 0.6401381540270429,
+        "f1-score": 0.601542503258572,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.9577232987832357,
+        "recall": 0.941,
+        "f1-score": 0.948723301659339,
+        "support": 1000.0
+      }
+    }
+  },
+  "warning": "Synthetic dataset; not suitable for real operational decisions."
+}
